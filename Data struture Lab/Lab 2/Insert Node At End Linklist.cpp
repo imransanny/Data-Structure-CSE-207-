@@ -5,7 +5,7 @@ using namespace std;
 struct node{
 int data;
 struct node *next;
-} *head, *tail;
+} *head= NULL, *tail = NULL;
 
 void create(){
  struct node *current_node, *temp;
@@ -31,7 +31,7 @@ for(int i=1 ; i<=n ; i++){
  }}
 
   void insert_node_at_the_END(){
-     struct node *head = NULL, struct node *tail = NULL;
+
    struct node *newnode, *temp;
    newnode = (struct node*) malloc (sizeof(struct node));
    cout<<"\nEnter the insert value at the End:";

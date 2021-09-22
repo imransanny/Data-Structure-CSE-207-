@@ -32,16 +32,25 @@ void create(){
    }
 }
 
-void deleteFromLast() {
-        node *temp = head;
-        node *tail = NULL;
-        tail=temp;
-        for (int i = 0; i < size(6) - 2; ++i) {
-            tail = tail->next;
-        }
-        delete tail->next;
-        tail->next = NULL;
+
+void delete_from_Last_possition(){
+
+        struct node *temp,*temp1;
+        if(head!=NULL) {
+                    temp = head;
+                    while(temp->next!=NULL) {
+                                    temp1 = temp;
+                                    temp = temp->next;
+                      }
+                      temp1->next = NULL;
+                     delete(temp);
+         }
+
+    cout<< endl;
+
     }
+
+
 
 void display()
 {
